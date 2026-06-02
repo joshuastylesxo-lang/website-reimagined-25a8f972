@@ -208,6 +208,17 @@ export const catalog: Category[] = [
     ],
   },
   {
+    id: "solar",
+    name: "Solar Panel Cleaning",
+    blurb: "Professional cleaning for residential and commercial solar systems.",
+    image: solarImg,
+    items: [
+      { id: "solar-1", name: "3KW – 6KW", description: "Small residential solar systems.", original: 310, price: 290, rating: 4.8, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
+      { id: "solar-2", name: "7KW – 18KW", description: "Mid-size residential / commercial.", original: 220, price: 205, rating: 4.4, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
+      { id: "solar-3", name: "20KW – 40KW", description: "Large commercial solar systems.", original: 195, price: 160, rating: 4.7, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
+    ],
+  },
+  {
     id: "ac",
     name: "AC Services",
     blurb: "Service, install, repair & mount AC units by verified pros.",
