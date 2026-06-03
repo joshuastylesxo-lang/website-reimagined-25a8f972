@@ -155,6 +155,7 @@ export const catalog: Category[] = [
     name: "Cleaning Services",
     blurb: "Sofa, carpet, mattress, curtain & deep cleaning — all in one place.",
     image: sofaImg,
+    parent: "home-services",
     items: [
       { id: "sofa-1", name: "Sofa Cleaning", description: "Per seat deep shampoo cleaning.", original: 500, price: 350, rating: 4.6, image: sofaImg, subcategory: "Sofa Cleaning" },
       { id: "sofa-7", name: "7 Seater Sofa Set Cleaning", description: "Complete 7-seater set deep clean.", original: 3500, price: 2450, rating: 4.9, image: sofaImg, subcategory: "Sofa Cleaning" },
@@ -194,6 +195,7 @@ export const catalog: Category[] = [
     name: "Water Tank Cleaning",
     blurb: "Plastic & cement water tank deep cleaning and sanitization.",
     image: cementTankImg,
+    parent: "home-services",
     items: [
       { id: "ptank-1", name: "150 – 300 Gallons", description: "Plastic tank, 150–300 gallons.", original: 2150, price: 1800, rating: r(), image: plasticTankImg, subcategory: "Plastic Water Tank Cleaning" },
       { id: "ptank-2", name: "350 – 500 Gallons", description: "Plastic tank, 350–500 gallons.", original: 2500, price: 2000, rating: r(), image: plasticTankImg, subcategory: "Plastic Water Tank Cleaning" },
@@ -212,6 +214,7 @@ export const catalog: Category[] = [
     name: "Solar Panel Cleaning",
     blurb: "Professional cleaning for residential and commercial solar systems.",
     image: solarImg,
+    parent: "home-services",
     items: [
       { id: "solar-1", name: "3KW – 6KW", description: "Small residential solar systems.", original: 310, price: 290, rating: 4.8, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
       { id: "solar-2", name: "7KW – 18KW", description: "Mid-size residential / commercial.", original: 220, price: 205, rating: 4.4, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
