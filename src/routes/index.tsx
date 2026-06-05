@@ -75,9 +75,6 @@ function Home() {
               alt="AllFix Maintenance Services PVT LIMITED"
               className="w-full max-w-md sm:max-w-xl lg:max-w-2xl h-auto drop-shadow-xl"
             />
-            <div className="mt-2 sm:mt-3 text-lg sm:text-2xl lg:text-3xl font-extrabold tracking-[0.25em] text-brand">
-              PVT LIMITED
-            </div>
           </div>
         </div>
       </section>
