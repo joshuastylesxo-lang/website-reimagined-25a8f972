@@ -39,7 +39,7 @@ import acRepairImg from "@/assets/services/ac/repair.jpg";
 import acMountDismountImg from "@/assets/services/ac/mount-dismount.jpg";
 import acDismountImg from "@/assets/services/ac/dismount.jpg";
 import acMdGeneralImg from "@/assets/services/ac/md-general.jpg";
-import homeServicesImg from "@/assets/services/home/home-services.jpg";
+
 import plumberImg from "@/assets/services/home/plumber.jpg";
 import plMixerTap from "@/assets/services/plumber/mixer-tap.jpg";
 import plSingleTap from "@/assets/services/plumber/single-tap.jpg";
@@ -155,7 +155,6 @@ export const catalog: Category[] = [
     name: "Cleaning Services",
     blurb: "Sofa, carpet, mattress, curtain & deep cleaning — all in one place.",
     image: sofaImg,
-    parent: "home-services",
     items: [
       { id: "sofa-1", name: "Sofa Cleaning", description: "Per seat deep shampoo cleaning.", original: 500, price: 350, rating: 4.6, image: sofaImg, subcategory: "Sofa Cleaning" },
       { id: "sofa-dewan", name: "Dewan Cleaning", description: "Full dewan shampoo & sanitization.", original: 1500, price: 1200, rating: 4.6, image: sofaImg, subcategory: "Sofa Cleaning" },
@@ -192,7 +191,6 @@ export const catalog: Category[] = [
     name: "Water Tank Cleaning",
     blurb: "Plastic & cement water tank deep cleaning and sanitization.",
     image: cementTankImg,
-    parent: "home-services",
     items: [
       { id: "ptank-1", name: "150 – 300 Gallons", description: "Plastic tank, 150–300 gallons.", original: 2150, price: 1800, rating: r(), image: plasticTankImg, subcategory: "Plastic Water Tank Cleaning" },
       { id: "ptank-2", name: "350 – 500 Gallons", description: "Plastic tank, 350–500 gallons.", original: 2500, price: 2000, rating: r(), image: plasticTankImg, subcategory: "Plastic Water Tank Cleaning" },
@@ -211,7 +209,6 @@ export const catalog: Category[] = [
     name: "Solar Panel Cleaning",
     blurb: "Professional cleaning for residential and commercial solar systems.",
     image: solarImg,
-    parent: "home-services",
     items: [
       { id: "solar-1", name: "3KW – 6KW", description: "Small residential solar systems.", original: 310, price: 290, rating: 4.8, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
       { id: "solar-2", name: "7KW – 18KW", description: "Mid-size residential / commercial.", original: 220, price: 205, rating: 4.4, unit: "/ KW", image: solarImg, subcategory: "Solar Panel Cleaning" },
@@ -223,7 +220,6 @@ export const catalog: Category[] = [
     name: "AC Services",
     blurb: "Service, install, repair & mount AC units by verified pros.",
     image: acImg,
-    parent: "home-services",
     items: [
       {
         id: "ac-general",
@@ -331,21 +327,13 @@ export const catalog: Category[] = [
       },
     ],
   },
-  // ===== Home Services parent (shown as a single card on the homepage) =====
-  {
-    id: "home-services",
-    name: "Home Services",
-    blurb: "Plumber, electrician, carpenter, painter, geyser, pest control and more.",
-    image: homeServicesImg,
-    items: [],
-  },
   // ===== Home Services subcategories =====
+
   {
     id: "plumber",
     name: "Plumber Services",
     blurb: "Verified plumbers for taps, leakage, sinks, commodes, motors and more.",
     image: plumberImg,
-    parent: "home-services",
     items: [
       { id: "pl-mixer-tap", name: "Mixer Tap Installation", description: "Install new mixer tap with fittings.", original: 950, price: 850, rating: 4.6, image: plMixerTap },
       { id: "pl-single-tap", name: "Single Tap Installation", description: "Install a single faucet.", original: 900, price: 700, rating: 4.5, image: plSingleTap },
@@ -382,7 +370,6 @@ export const catalog: Category[] = [
     name: "Electrician Services",
     blurb: "Certified electricians for wiring, fans, lights, breakers and repairs.",
     image: electricianImg,
-    parent: "home-services",
     items: [
       { id: "el-ceiling-fan-install", name: "Ceiling Fan Installation", description: "Install ceiling fan with capacitor.", original: 1200, price: 900, rating: 4.6, image: elCeilingFanInstall },
       { id: "el-smd-lights", name: "SMD Lights Installation", description: "Install SMD / panel lights.", original: 600, price: 450, rating: 4.5, image: elSmdLights },
@@ -418,7 +405,6 @@ export const catalog: Category[] = [
     name: "Handyman Services",
     blurb: "Quick fixes — hanging, mounting and odd jobs around the house.",
     image: handymanImg,
-    parent: "home-services",
     items: [
       { id: "hm-curtain-rod", name: "Curtain Rod Installation", description: "Install curtain rod with brackets.", original: 900, price: 700, rating: 4.5, image: hmCurtainRod },
       { id: "hm-art", name: "Art Hanging", description: "Hang artwork on the wall.", original: 600, price: 450, rating: 4.5, image: hmArt },
@@ -433,7 +419,6 @@ export const catalog: Category[] = [
     name: "Carpenter Services",
     blurb: "Wood, doors, drawers, furniture & locks — fixed by skilled carpenters.",
     image: carpenterImg,
-    parent: "home-services",
     items: [
       { id: "cp-wardrobe", name: "Wardrobe Repairing", description: "Repair wardrobe doors / hinges.", original: 2000, price: 1500, rating: 4.5, image: cpWardrobe },
       { id: "cp-door-install", name: "Door Installation", description: "Install wooden door.", original: 2500, price: 2000, rating: 4.6, image: cpDoorInstall },
@@ -451,7 +436,6 @@ export const catalog: Category[] = [
     name: "Painter Services",
     blurb: "Indoor, outdoor & furniture painting and polish by skilled painters.",
     image: painterImg,
-    parent: "home-services",
     items: [
       { id: "pt-out", name: "House Paint (Outdoor)", description: "Per sqft outdoor house painting.", original: 35, price: 25, rating: 4.6, unit: "/ SQFT", image: ptOutdoor },
       { id: "pt-in", name: "House Paint (Indoor)", description: "Per sqft indoor house painting.", original: 30, price: 22, rating: 4.6, unit: "/ SQFT", image: ptIndoor },
@@ -468,7 +452,6 @@ export const catalog: Category[] = [
     name: "Home Appliances",
     blurb: "Repair & service for ovens, washing machines and kitchen appliances.",
     image: appliancesImg,
-    parent: "home-services",
     items: [
       { id: "ap-cook-range-rep", name: "Cooking Range Repairing", description: "Repair cooking range.", original: 2000, price: 1700, rating: 4.5, image: apCookRange },
       { id: "ap-wm-rep", name: "Automatic Washing Machine Repairing", description: "Repair auto washing machine.", original: 2000, price: 1700, rating: 4.5, image: apWmRepair },
@@ -483,7 +466,6 @@ export const catalog: Category[] = [
     name: "Geyser Services",
     blurb: "Gas & electric geyser install, service, repair and dismount.",
     image: geyserImg,
-    parent: "home-services",
     items: [
       { id: "gy-inst-service", name: "Instant Geyser Service", description: "Instant geyser general service.", original: 1800, price: 1500, rating: 4.5, image: gyInstService },
       { id: "gy-inst-install", name: "Instant Geyser Installation", description: "Install instant geyser.", original: 2200, price: 1800, rating: 4.6, image: gyInstInstall },
@@ -504,7 +486,6 @@ export const catalog: Category[] = [
     name: "Pest Control Services",
     blurb: "Safe fumigation and treatments for cockroaches, bed bugs, dengue & more.",
     image: pestImg,
-    parent: "home-services",
     items: [
       { id: "pc-general", name: "General Fumigation", description: "Whole-home general fumigation.", original: 6000, price: 4500, rating: 4.7, image: pcGeneral },
       { id: "pc-cockroach", name: "Cockroach Treatment", description: "Targeted cockroach treatment.", original: 4500, price: 3500, rating: 4.6, image: pcCockroach },
