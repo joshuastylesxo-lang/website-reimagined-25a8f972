@@ -227,6 +227,19 @@ export const catalog: Category[] = [
         description: "Per AC (1 to 2.5 tons)",
         original: 3300, price: 2500, rating: 4.3,
         image: acGeneralImg,
+        includes: [
+          "Mounting of indoor unit",
+          "Mounting of outdoor unit",
+          "AC pipe installation within 10 feet",
+        ],
+        excludes: [
+          "AC pipe installation more than 10 feet",
+          "Any type of repair",
+          "Any type of material",
+          "Any type of gas",
+          "Ladder",
+          "Underground and ceiling piping",
+        ],
       },
       {
         id: "ac-install",
