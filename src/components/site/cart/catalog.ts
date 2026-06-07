@@ -327,15 +327,8 @@ export const catalog: Category[] = [
       },
     ],
   },
-  // ===== Home Services parent (shown as a single card on the homepage) =====
-  {
-    id: "home-services",
-    name: "Home Services",
-    blurb: "Plumber, electrician, carpenter, painter, geyser, pest control and more.",
-    image: homeServicesImg,
-    items: [],
-  },
   // ===== Home Services subcategories =====
+
   {
     id: "plumber",
     name: "Plumber Services",
