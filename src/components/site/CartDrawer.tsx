@@ -53,7 +53,7 @@ export function CartDrawer() {
       setOpen(false);
       setStep("cart");
       setInfo({ name: "", phone: "", address: "", notes: "" });
-      setAcceptedTerms(false);
+      
     } catch {
       toast.error("Unable to open WhatsApp. Please try again.");
     } finally {
