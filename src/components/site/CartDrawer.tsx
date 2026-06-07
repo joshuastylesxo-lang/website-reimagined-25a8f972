@@ -15,7 +15,7 @@ export function CartDrawer() {
   const [step, setStep] = useState<"cart" | "checkout">("cart");
   const [info, setInfo] = useState({ name: "", phone: "", address: "", notes: "" });
   const [submitting, setSubmitting] = useState(false);
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  
   const savings = originalTotal - total;
 
   const WHATSAPP_NUMBER = "923255333222";
