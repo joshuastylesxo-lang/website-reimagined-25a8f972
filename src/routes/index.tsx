@@ -27,18 +27,21 @@ function Home() {
   const catalog = useLiveCatalog();
   const topCategories = catalog.filter((c) => !c.parent);
 
-  const mobileTopIds = ["home-services"];
-  const mobileTop = mobileTopIds
-    .map((id) => topCategories.find((c) => c.id === id))
-    .filter((c): c is (typeof topCategories)[0] => Boolean(c));
-  const restCategories = topCategories.filter((c) => !mobileTopIds.includes(c.id));
+  const headOrder = ["ac", "plumber", "electrician", "solar", "water-tank"];
+  const tailOrder = ["cleaning", "carpenter"];
+  const ordered = [
+    ...headOrder.map((id) => topCategories.find((c) => c.id === id)).filter(Boolean),
+    ...topCategories.filter(
+      (c) => !headOrder.includes(c.id) && !tailOrder.includes(c.id),
+    ),
+    ...tailOrder.map((id) => topCategories.find((c) => c.id === id)).filter(Boolean),
+  ] as typeof topCategories;
 
   const renderCard = (c: (typeof topCategories)[0]) => (
     <Link
       key={c.id}
-      {...(c.id === "home-services"
-        ? { to: "/home-services" as const }
-        : { to: "/categories/$id" as const, params: { id: c.id } })}
+      to="/categories/$id"
+      params={{ id: c.id }}
       className="card-hover group relative overflow-hidden rounded-2xl border border-border bg-card"
     >
       <div className="aspect-[4/3] overflow-hidden bg-muted">
@@ -57,13 +60,12 @@ function Home() {
           {c.blurb}
         </p>
         <div className="mt-2 text-xs font-semibold text-brand">
-          {c.id === "home-services"
-            ? `${catalog.filter((x) => x.parent === "home-services").length} categories →`
-            : `${c.items.length} services →`}
+          {c.items.length} services →
         </div>
       </div>
     </Link>
   );
+
 
   return (
     <div>
