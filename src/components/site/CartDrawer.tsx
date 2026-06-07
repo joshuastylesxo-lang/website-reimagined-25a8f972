@@ -174,7 +174,7 @@ export function CartDrawer() {
               </div>
             </div>
             <div className="border-t p-5 space-y-2 bg-background">
-              <Button onClick={submit} disabled={submitting || !acceptedTerms} className="w-full h-12 rounded-full bg-brand hover:bg-brand text-brand-foreground font-semibold shadow-glow disabled:opacity-60">
+              <Button onClick={submit} disabled={submitting} className="w-full h-12 rounded-full bg-brand hover:bg-brand text-brand-foreground font-semibold shadow-glow disabled:opacity-60">
                 {submitting ? (
                   <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Opening WhatsApp…</>
                 ) : (
