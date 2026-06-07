@@ -24,7 +24,7 @@ export function CartDrawer() {
     if (items.length === 0) return toast.error("Add at least one service");
     if (!info.name.trim() || info.name.trim().length < 2) return toast.error("Enter your name");
     if (!info.phone.trim() || info.phone.trim().length < 7) return toast.error("Enter a valid phone");
-    if (!acceptedTerms) return toast.error("Please accept the Terms & Conditions to continue");
+    
 
     setSubmitting(true);
     try {
