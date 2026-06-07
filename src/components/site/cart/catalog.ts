@@ -272,11 +272,17 @@ export const catalog: Category[] = [
           "AC gas check",
           "AC gas leakage check",
           "Repair charges decided after inspection",
+          "Mounting of indoor unit",
+          "Mounting of outdoor unit",
+          "AC pipe installation within 10 feet",
         ],
         excludes: [
           "Any type of material",
           "Any type of gas",
           "Ladder",
+          "AC pipe installation more than 10 feet",
+          "Any type of repair",
+          "Underground and ceiling piping",
         ],
       },
       {
